@@ -1,0 +1,40 @@
+
+MS SQL Server -> Transaction
+-------------------------------------------------
+DB Server: sql-server-transaction-west-us-2.database.windows.net
+DB Name: mssql-database-transaction-west-us-2
+DB Username: 
+DB Password: 
+DB Connection String: 
+
+MS SQL Server -> Balance
+-------------------------------------------------
+DB Server: sql-server-balance-west-us-2.database.windows.net
+DB Name: mssql-database-balance-west-us-2
+DB Username: 
+DB Password: 
+DB Connection String: 
+
+MS SQL Server -> Transfer
+-------------------------------------------------
+DB Server: sql-server-transfer-west-us-2.database.windows.net
+DB Name: mssql-database-transfer-west-us-2
+DB Username: 
+DB Password: 
+Connection String: 
+
+Azure CosmosDB -> Notification
+-------------------------------------------------
+DB Name: 
+DB Connection String: 
+
+Azure Service Bus
+-------------------------------------------------
+Topic: bank-transfer
+Events: 
+    MS Transaction: transaction-initiated, transaction-completed, transaction-failed
+    MS Balance    : balance-initiated, balance-confirmed, balance-failed 
+    MS Transfer   : 
+                    - transfer-initiated, transfer-confirmed, transfer-failed
+                    - transfer-confirmed-balance, transfer-failed-balance
+Connection String: xx-xxx
