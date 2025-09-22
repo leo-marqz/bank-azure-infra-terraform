@@ -21,9 +21,9 @@ SELECT * FROM [Transaction]
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
--- USE mssql-database-balance-west-us;
+-- CREATE DATABASE  xxxx
 
-CREATE TABLE [Balance](
+CREATE TABLE Balance(
 Id INT IDENTITY(1,1) PRIMARY KEY,
 CorrelationId NVARCHAR(50) NOT NULL,
 BalanceDate DATETIME NOT NULL,
@@ -34,7 +34,7 @@ CustomerId INT NOT NULL
 INSERT INTO Balance (CorrelationId, BalanceDate, CurrentState, CustomerId)  
 VALUES ('123e4567-e89b-12d3-a456-426614174000', GETDATE(), 'Approved', 1);
 
-SELECT * FROM Balance
+SELECT * FROM [Balance]
 
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -54,5 +54,5 @@ CREATE TABLE [Transfer] (
 INSERT INTO [Transfer] (CorrelationId, TransferDate, CurrentState, Amount, SourceAccount, DestinationAccount, CustomerId)  
 VALUES ('123e4567-e89b-12d3-a456-426614174000', GETDATE(), 'Pending', 1500.75, '00908929778493-43984', '32408929778493-56984', 1);
 
-SELECT * FROM [Transfer]
+SELECT * FROM [Transfer];
 

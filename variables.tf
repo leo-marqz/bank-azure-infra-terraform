@@ -23,9 +23,9 @@ variable "mssql_server_sku" {
 variable "bank_microservices_tags" {
   type = map(string)
   default = {
-    "Environment" = ""
-    "Owner"       = ""
-    "Email"       = ""
+    "Environment" = "Development"
+    "Owner"       = "leomarqz"
+    "Email"       = "leomarqz2020@gmail.com"
     "Description"       = "Microservices with C# and Asp.Net in .Net 8"
   }
 }
@@ -34,11 +34,11 @@ variable "bank_microservices_tags" {
 
 variable "tmp_username" {
   type = string
-  default = ""
+  default = "cracknight"
 }
 
 variable "tmp_password" {
   type = string
-  default = ""
+  default = "$ABClm123$"
 }
 
