@@ -1,4 +1,4 @@
-# IaaC Con Terraform
+# IaC with Terraform
 ## Infraestructura para el proyecto de microservicios bancarios (Bank Microservices with .Net 8)
 
 ### Configuraciones Iniciales
