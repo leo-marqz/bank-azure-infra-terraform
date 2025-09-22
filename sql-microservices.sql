@@ -1,5 +1,5 @@
 
-USE mssql-database-transaction-west-us;
+-- USE mssql-database-transaction-west-us;
 
 CREATE TABLE [Transaction](
 Id INT IDENTITY (1,1) PRIMARY KEY,
@@ -21,7 +21,7 @@ SELECT * FROM [Transaction]
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 --||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-USE mssql-database-balance-west-us;
+-- USE mssql-database-balance-west-us;
 
 CREATE TABLE [Balance](
 Id INT IDENTITY(1,1) PRIMARY KEY,
